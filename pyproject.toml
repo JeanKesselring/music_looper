@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "music-looper"
+version = "0.1.0"
+description = "A music looping library with beat-perfect synchronization and harmonic matching"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+dependencies = [
+    "librosa>=0.10.0",
+    "numpy>=1.20.0",
+    "pydub>=0.25.1",
+    "scipy>=1.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "soundfile>=0.12.0",
+    "black>=22.0",
+    "ruff>=0.1.0",
+]
+
+[project.urls]
+Repository = "https://github.com/yourusername/music-looper"
+Documentation = "https://github.com/yourusername/music-looper#readme"
+
+[tool.setuptools]
+packages = ["music_looper"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.ruff]
+target-version = "py38"
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
