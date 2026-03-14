@@ -13,13 +13,13 @@ Generate perfectly synchronized music loops from any audio file. Automatically d
 
 **Option 1: From GitHub (recommended)**
 ```bash
-pip install git+https://github.com/yourusername/music-looper.git
+pip install git+https://github.com/JeanKesselring/music_looper.git
 ```
 
 **Option 2: Local development**
 ```bash
-git clone https://github.com/yourusername/music-looper.git
-cd music-looper
+git clone https://github.com/JeanKesselring/music_looper.git
+cd music_looper
 pip install -e .
 ```
 
